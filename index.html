@@ -1,147 +1,142 @@
 <!DOCTYPE html>
-<html>
-
-<!--HEAD-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <!--HEAD-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fragrance Store</title>
     <style>
-         /* Text to overlay */
-         .text-overlay {
-           position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 2rem;
-            font-weight: bold;
-            text-align: left;
-            background-color: rgba(0, 0, 0, 0.5); /* Optional: To add a semi-transparent background */
-            padding: 10px;
-            border-radius: 5px; /* Optional: Round the corners of the text background */
-        }
-
+      /* Text to overlay */
+      .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: left;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Optional: To add a semi-transparent background */
+        padding: 10px;
+        border-radius: 5px; /* Optional: Round the corners of the text background */
+      }
     </style>
-</head>
+  </head>
 
-<!--BODY-->
-<body>
-
-<!-- Header -->
-<header>
-    <nav>
-        <div>Logo
-            <img src="images/Link.png" alt="Fragrance">
+  <!--BODY-->
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/Link.png" alt="Fragrance" />
         </div>
         <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#new-scents">New Arrivals</a>
-        <a href="#best-seller">Best Seller</a>
-        <a href="#aboutus">About Us</a> 
+          <a href="#">Home</a>
+          <a href="#new-scents">New Arrivals</a>
+          <a href="#best-seller">Best Seller</a>
+          <a href="#aboutus">About Us</a>
         </div>
         <div class="carts" id="cart">
-        <a href="#cart">Cart</a>
+          <a href="#cart">Cart</a>
         </div>
-    </nav>
-    
-</header>
-<!--Header End-->
+      </nav>
+    </header>
+    <!--Header End-->
 
-
-<!-- Banner Section -->
-<section class="Banner">
-    <img src="images/3.jpg" alt="Fragrance">
-    <div class="text-overlay">
-        <h2>Gift for you from me </h2>
+    <!-- Banner Section -->
+    <section class="Banner">
+      <img src="images/3.jpg" alt="Fragrance" />
+      <div class="text-overlay">
+        <h3>New Collection</h3>
+        <h2>Gift for you from me</h2>
         <a href="#">Discover Gifts</a>
-     </div>   
-    
-</section>
-<!--Banner Section End-->
+      </div>
+    </section>
+    <!--Banner Section End-->
 
-
-<!-- Best Sellers Section -->
-<sec class="product">
-<div class="container" id="best-seller">
-    <h2 class="section-title">Best Sellers</h2>
-    <div class="product-grid">
-        <div class="product">
-            <img src="images/2.png" alt="Product Name">
-            <div class="product-name">Santal</div>
-            <div class="product-price">$150</div>
+    <!-- Best Sellers Section -->
+    <section class="product">
+      <div class="container" id="best-seller">
+        <h2 class="section-title">Best Sellers</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="images/2.png" alt="Product Name" />
+            <h4 class="product-name">Santal</h4>
+            <h4 class="product-price">$150</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/4.png" alt="Product Name">
-            <div class="product-name">Orange Marmalade</div>
-            <div class="product-price">$250</div>
+          </div>
+          <div class="product">
+            <img src="images/4.png" alt="Product Name" />
+            <h4 class="product-name">Orange Marmalade</h4>
+            <h4 class="product-price">$250</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/6.png" alt="Product Name">
-            <div class="product-name">Peony & Blush Suede</div>
-            <div class="product-price">$250</div>
+          </div>
+          <div class="product">
+            <img src="images/6.png" alt="Product Name" />
+            <h4 class="product-name">Peony & Blush Suede</h4>
+            <h4 class="product-price">$250</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/9.png" alt="Product Name">
-            <div class="product-name">Blackberry & Bay</div>
-            <div class="product-price">$200</div>
+          </div>
+          <div class="product">
+            <img src="images/9.png" alt="Product Name" />
+            <h4 class="product-name">Blackberry & Bay</h4>
+            <h4 class="product-price">$200</h4>
             <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-    </div>
-    <!--Best Seller Section End-->
+        <!--Best Seller Section End-->
 
-
-    <!-- New Scents Section -->
-    <h2 class="section-title" id="new-scents">New Scents</h2>
-    <div class="product-grid">
-        <div class="product">
-            <img src="images/1.png" alt="Product Name">
-            <div class="product-name">Lychee</div>
-            <div class="product-price">$125</div>
+        <!-- New Scents Section -->
+        <h2 class="section-title" id="new-scents">New Scents</h2>
+        <div class="product-grid">
+          <div class="product">
+            <img src="images/1.png" alt="Product Name" />
+            <h4 class="product-name">Lychee</h4>
+            <h4 class="product-price">$125</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/10.png" alt="Product Name">
-            <div class="product-name">Wood sage & Sea salt</div>
-            <div class="product-price">$200</div>
+          </div>
+          <div class="product">
+            <img src="images/10.png" alt="Product Name" />
+            <h4 class="product-name">Wood sage & Sea salt</h4>
+            <h4 class="product-price">$200</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/12.png" alt="Product Name">
-            <div class="product-name">Musk Momento</div>
-            <div class="product-price">$100</div>
+          </div>
+          <div class="product">
+            <img src="images/12.png" alt="Product Name" />
+            <h4 class="product-name">Musk Momento</h4>
+            <h4 class="product-price">$100</h4>
             <button class="add-to-cart">Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="images/15.png" alt="Product Name">
-            <div class="product-name">Yuzu Zest</div>
-            <div class="product-price">$100</div>
+          </div>
+          <div class="product">
+            <img src="images/15.png" alt="Product Name" />
+            <h4 class="product-name">Yuzu Zest</h4>
+            <h4 class="product-price">$100</h4>
             <button class="add-to-cart">Add to Cart</button>
+          </div>
         </div>
-    </div>
-</div>
+      </div>
+    </section>
+    <!--New Scent End-->
 
-</sec>
-<!--New Scent End-->
+    <!-- Footer -->
+    <footer>
+      <p id="aboutus">Jo Malone Australia Copyright</p>
+      <p class="Us">
+        Coded by : Bisma Sadaf Soul Thai and is open-sourced on
+        <a target="_blank" href="https://github.com/bis-kan/PerfumeStore"
+          >Github</a
+        >
+      </p>
+      <img src="images/Trustmark_Desktop.png" alt="Product Name" />
+    </footer>
 
- <!-- Footer -->
- <footer>
-    <p id="aboutus"> Jo Malone Australia Copyright</p>
-    <p class="Us"> Coded by : Bisma Sadaf Soul Thai </p>
-    <img src="images/Trustmark_Desktop.png" alt="Product Name">
-</footer>
-
-<!--Footer End-->
-
-</body>
-<!--BODY END-->
-
-</html>
-
-
-
-
+    <!--Footer End-->
+  </body>
+  <!--BODY END-->
 </html>
