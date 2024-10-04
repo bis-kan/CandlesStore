@@ -138,6 +138,10 @@ border-radius: 5px;
   margin: 0 100px;
 }
 
+.section h2 {
+  padding: 16px;
+}
+
 /*
 .product-grid {
   display: grid;
@@ -153,6 +157,7 @@ border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 4px;
 }
 
 .product {
