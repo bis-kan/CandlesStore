@@ -84,7 +84,7 @@ nav a {
 */
 
 .hero {
-  background-image: url("../images/3.jpg");
+  background-image: url("../resources/images/3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   height: 745px;
@@ -132,12 +132,13 @@ border-radius: 5px;
 */
 
 .section {
-  width: 1440px;
   align-content: center;
   padding: 32px 10px;
   text-align: center;
+  margin: 0 100px;
 }
 
+/*
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -146,6 +147,16 @@ border-radius: 5px;
   align-items: center;
   text-align: center;
   margin-top: 32px;
+}
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product {
+  flex-basis: 200px;
 }
 
 .product img {
@@ -184,7 +195,7 @@ footer img {
 }
 
 .Us {
-  width: 380px;
+  width: 300px;
   text-align: end;
 }
 
