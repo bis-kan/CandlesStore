@@ -1,0 +1,101 @@
+
+body {
+    width: 1440px;
+    color: black;
+    background-color: rgb(249, 239, 226); 
+   background-image: url(/images/bg2.png);
+    background-repeat: repeat;
+
+    
+}
+
+nav img {
+    
+    display: block;
+    margin-left: 20px; 
+    margin-top: 20px;
+}
+
+
+
+.nav-links ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: -50px;
+    overflow: hidden;
+    
+   
+}
+
+.nav-links li {
+    
+    padding-left: 50px;
+    display: inline-block; 
+    margin: 0 auto;
+
+
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    
+   
+}
+
+.carts {
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+    
+}
+
+.carts a {
+    text-decoration: none;
+    color: black;
+}
+
+.Banner {
+   
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* Text to overlay */
+.text-overlay {
+    text-align: left;
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%); 
+    font-weight: bold;
+    text-align: left;
+   
+    /* Optional: To add a semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    /* Optional: Round the corners of the text background */
+}
+
+.text-overlay a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.product {
+    align-content: center;
+}
+
+.section-title {
+
+}
