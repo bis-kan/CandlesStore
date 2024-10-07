@@ -158,15 +158,16 @@ border-radius: 5px;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4px;
+  margin-top: 32px;
 }
 
 .product {
-  flex-basis: 200px;
+  flex-basis: 250px;
 }
 
 .product img {
-  height: 295px;
-  width: 295px;
+  height: 250px;
+  width: 250px;
 }
 
 .product a {
