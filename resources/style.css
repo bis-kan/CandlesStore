@@ -169,6 +169,10 @@ border-radius: 5px;
   width: 295px;
 }
 
+.product a {
+  cursor: pointer;
+}
+
 .product-details {
   padding: 16px 0px;
 }
