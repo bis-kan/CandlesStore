@@ -1,101 +1,210 @@
+html {
+  color: #1c1c1c;
+  background-color: rgb(249, 239, 226);
+  background-repeat: repeat;
+  font-family: "Montserrat";
+}
+* {
+  margin: 0 auto;
+}
 
-body {
-    width: 1440px;
-    color: black;
-    background-color: rgb(249, 239, 226); 
-   background-image: url(/images/bg2.png);
-    background-repeat: repeat;
+h2 {
+  font-family: "Inria Serif";
+  font-size: 40px;
+  font-weight: normal;
+}
 
-    
+h3 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h4 {
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0 100px;
 }
 
 nav img {
-    
-    display: block;
-    margin-left: 20px; 
-    margin-top: 20px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+nav a {
+  text-decoration: none;
+  padding: 0 16px;
+  color: #1c1c1c;
 }
 
-
-
+/*
 .nav-links ul {
-    list-style-type: none;
-    text-align: center;
-    margin-top: -50px;
-    overflow: hidden;
-    
-   
+  list-style-type: none;
+  text-align: center;
+  margin-top: -50px;
+  overflow: hidden;
 }
 
 .nav-links li {
-    
-    padding-left: 50px;
-    display: inline-block; 
-    margin: 0 auto;
-
-
+  padding-left: 50px;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .nav-links a {
-    color: black;
-    text-decoration: none;
-    
-   
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
 }
-
-.carts {
-    float: right;
-    margin-top: -40px;
-    margin-right: 20px;
-    
+  .carts {
+  float: right;
+  margin-top: -40px;
+  margin-right: 20px;
 }
 
 .carts a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+*/
+
+.hero {
+  background-image: url("../resources/images/3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 745px;
 }
 
-.Banner {
-   
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+.heading {
+  padding: 400px 0 0 200px;
 }
-/* Text to overlay */
+.heading h2 {
+  padding: 8px 0;
+}
+
+.heading a {
+  text-decoration: none;
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
+  padding: 8px 16px;
+  border-radius: 24px;
+}
+
+.heading a:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+  transition: all 350ms ease-in-out;
+}
+/*Text to overlay
 .text-overlay {
-    text-align: left;
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    transform: translate(-50%, -50%); 
-    font-weight: bold;
-    text-align: left;
-   
-    /* Optional: To add a semi-transparent background */
-    padding: 10px;
-    border-radius: 5px;
-    /* Optional: Round the corners of the text background */
+  text-align: left;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  text-align: left;
 }
+/* Optional: To add a semi-transparent background 
+padding: 10px;
+border-radius: 5px;
+/* Optional: Round the corners of the text background 
 
 .text-overlay a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+}
+*/
 
+.section {
+  align-content: center;
+  padding: 32px 10px;
+  text-align: center;
+  margin: 0 100px;
 }
 
+.section h2 {
+  padding: 16px;
+}
+
+/*
 .product-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 32px;
+}
+*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
 }
 
 .product {
-    align-content: center;
+  flex-basis: 200px;
 }
 
-.section-title {
+.product img {
+  height: 295px;
+  width: 295px;
+}
 
+.product-details {
+  padding: 16px 0px;
+}
+
+button {
+  border: 1px solid #1c1c1c;
+  background-color: rgba(0, 0, 0, 0);
+  color: #1c1c1c;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 300px;
+  margin-top: 8px;
+}
+button:hover {
+  background-color: #1c1c1c;
+  color: #fff;
+  transition: all 350ms ease-in-out;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+footer img {
+  width: 150px;
+}
+
+.Us {
+  width: 300px;
+  text-align: end;
+}
+
+footer a {
+  color: #1c1c1c;
 }
