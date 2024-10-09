@@ -115,11 +115,14 @@ nav a:hover {
   transition: all 350ms ease-in-out;
 }
 
-.cart-section{
+.cart-section {
   border: 1px solid gray;
 }
-#cart a:hover {
+#cart a {
   opacity: 0.7;
+}
+#cart a:hover {
+  opacity: 1;
 }
 /*Text to overlay
 .text-overlay {
@@ -195,7 +198,7 @@ border-radius: 5px;
   padding: 16px 0px;
 }
 
-button {
+.product-details button {
   border: 1px solid #1c1c1c;
   background-color: rgba(0, 0, 0, 0);
   color: #1c1c1c;
@@ -206,7 +209,7 @@ button {
   font-weight: 300px;
   margin-top: 8px;
 }
-button:hover {
+.product-details button:hover {
   background-color: #1c1c1c;
   color: #fff;
   transition: all 350ms ease-in-out;
@@ -234,7 +237,7 @@ footer a {
 /* Responsive adjustments */
 @media (max-width: 600px) {
   .footer-content {
-      flex-direction: column; /* Stack sections vertically */
-      align-items: center; /* Center align the sections */
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center; /* Center align the sections */
   }
 }
