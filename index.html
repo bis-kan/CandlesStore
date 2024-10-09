@@ -2,7 +2,7 @@
 
 <html>
   <!--HEAD-->
-  <head>
+  <head class="header-content">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fragrance Store</title>
@@ -44,54 +44,54 @@
         </div>
         <div class="carts" id="cart">
           <a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
-        <!--cart-section here-->
-        <div class="cart-section">
-          <div class="heading">
-            <h1>My Bag (3 Items)</h1>
-          </div>
-
-          <div class="item">
-            <img
-              src="./resources/images/2.png"
-              alt="perfume"
-              width="190px"
-              height="175px"
-            />
+          <div id="cart-modal" class="modal">
+            <!--cart-section here-->
+            <div id="cart-container">
+            <h1>My Bag</h1>
+            
             <div class="cart-item">
-              <h4>Product name</h4>
-              <h4>Price</h4>
-              <button>Remove item</button>
+                <img
+                src="./resources/images/2.png"
+                alt="perfume"  width="320px">
+                <div class="cart-item-info">
+                    <div class="product-name">Tea tree</div>
+                    <div class="price">$150</div>
+                    <button class="remove-btn">Remove item</button>
+                </div>
             </div>
-          </div>
 
-          <div class="item">
-            <img
-              src="./resources/images/12.png"
-              alt="perfume"
-              width="190px"
-              height="175px"
-            />
             <div class="cart-item">
-              <h4>Product name</h4>
-              <h4>Price</h4>
-              <button>Remove item</button>
+                <img
+                src="./resources/images/12.png"
+                alt="perfume"  width="320px">
+                <div class="cart-item-info">
+                    <div class="product-name">Musk Momento</div>
+                    <div class="price">$100</div>
+                    <button class="remove-btn">Remove item</button>
+                </div>
             </div>
-          </div>
 
-          <div class="item">
-            <img
-              src="./resources/images/13.png"
-              alt="perfume"
-              width="190px"
-              height="175px"
-            />
             <div class="cart-item">
-              <h4>Product name</h4>
-              <h4>Price</h4>
-              <button>Remove item</button>
+                <img
+                src="./resources/images/13.png"
+                alt="perfume"  width="320px">
+                <div class="cart-item-info">
+                    <div class="product-name">Sakura Cherry Blossom</div>
+                    <div class="price">$150</div>
+                    <button class="remove-btn">Remove item</button>
+                </div>
             </div>
-          </div>
+
+            <div id="checkout-container">
+                <button>CHECKOUT</button>
+            </div>
+        
+            <div id="close-container">
+                <button>Close</button>
+            </div>
+            </div>
+
+          <!--
           <div class="cart-footer">
             <div>
               <a href="#" class="view-bag-btn">View bag</a>
@@ -99,7 +99,12 @@
               <a href="#" class="close-btn">Close</a>
             </div>
           </div>
+        -->
+        </div> 
         </div>
+              
+            
+    </div>
         <!--cart-section end-->
       </nav>
     </header>
