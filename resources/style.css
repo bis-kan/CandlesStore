@@ -52,6 +52,10 @@ nav a {
   color: #1c1c1c;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
 /*
 .nav-links ul {
   list-style-type: none;
@@ -109,6 +113,13 @@ nav a {
   background-color: #1c1c1c;
   color: #fff;
   transition: all 350ms ease-in-out;
+}
+
+.cart-section{
+  border: 1px solid gray;
+}
+#cart a:hover {
+  opacity: 0.7;
 }
 /*Text to overlay
 .text-overlay {
@@ -218,4 +229,12 @@ footer img {
 
 footer a {
   color: #1c1c1c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-content {
+      flex-direction: column; /* Stack sections vertically */
+      align-items: center; /* Center align the sections */
+  }
 }
