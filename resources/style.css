@@ -102,12 +102,11 @@ nav a:hover {
   top: 60px;
   right: 0;
   width: 420px;
-  height: 800px;
+  height: 875px;
   background-color: rgb(249, 239, 226);
   border: 2px solid #d3bcbc;
   padding: 10px;
   margin: 30px auto;
-  overflow-y: auto;
   z-index: 1000;
   /*display: none; */
 }
