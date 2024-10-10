@@ -42,63 +42,62 @@
           <a href="#best-seller">Best Seller</a>
           <a href="#aboutus">About Us</a>
         </div>
-        <div class="carts" id="cart">
-          <a href="#cart-container"
-            ><i class="fa-solid fa-cart-shopping"></i
-          ></a>
-          <div id="cart-modal" class="modal">
-            <!--cart-section here-->
-            <div class="cart-container">
-              <h3>My Bag (3 Items)</h3>
+        <div class="carts">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          <!--cart-section here-->
 
-              <div class="cart-item">
-                <img src="./resources/images/14.png" alt="perfume" />
-                <div class="cart-item-info">
-                  <h6 class="product-name">Tea tree</h6>
-                  <h6 class="price">$150</h6>
-                  <div class="remove-btn">
-                    <button>Remove item</button>
-                  </div>
+          <div class="cart-container" id="cart">
+            <h3>My Bag (3 Items)</h3>
+
+            <div class="cart-item">
+              <img src="./resources/images/14.png" alt="perfume" />
+              <div class="cart-item-info">
+                <h6 class="product-name">Tea tree</h6>
+                <h6 class="price">$150</h6>
+                <div class="remove-btn">
+                  <button>Remove item</button>
                 </div>
-              </div>
-
-              <div class="cart-item">
-                <img src="./resources/images/12.png" alt="perfume" />
-                <div class="cart-item-info">
-                  <h6 class="product-name">Musk Momento</h6>
-                  <h6 class="price">$100</h6>
-                  <div class="remove-btn">
-                    <button>Remove item</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cart-item">
-                <img src="./resources/images/13.png" alt="perfume" />
-                <div class="cart-item-info">
-                  <h6 class="product-name">Sakura Cherry Blossom</h6>
-                  <h6 class="price">$150</h6>
-                  <div class="remove-btn">
-                    <button>Remove item</button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="checkout-container">
-                <button>Checkout</button>
-              </div>
-
-              <div class="close-container">
-                <a href="#">Close</a>
               </div>
             </div>
+
+            <div class="cart-item">
+              <img src="./resources/images/12.png" alt="perfume" />
+              <div class="cart-item-info">
+                <h6 class="product-name">Musk Momento</h6>
+                <h6 class="price">$100</h6>
+                <div class="remove-btn">
+                  <button>Remove item</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <img src="./resources/images/13.png" alt="perfume" />
+              <div class="cart-item-info">
+                <h6 class="product-name">Sakura Cherry Blossom</h6>
+                <h6 class="price">$150</h6>
+                <div class="remove-btn">
+                  <button>Remove item</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="subtotal">
+              <h5>Subtotal: $400</h5>
+            </div>
+            <div class="checkout-container">
+              <button>Checkout</button>
+            </div>
+
+            <div class="close-container">
+              <a href="#">Close</a>
+            </div>
           </div>
+          <!--cart-section end-->
         </div>
-        <!--cart-section end-->
       </nav>
     </header>
     <!--Header End-->
-
     <!-- Banner Section -->
     <main>
       <section class="hero">
@@ -173,7 +172,6 @@
         </div>
       </section>
       <!--Best Seller Section End-->
-
       <!-- New Scents Section -->
       <section class="section" id="new-scents">
         <h2 class="section-title">New Scents</h2>
@@ -230,7 +228,7 @@
             <div class="product-details">
               <h4 class="product-name">Yuzu Zest</h4>
               <h4 class="product-price">$100</h4>
-              <button class="add-to-cart">Add to Cart</button>
+              <button href="" class="add-to-cart">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -240,8 +238,9 @@
 
     <!-- Footer -->
     <footer class="footer-content">
-      <p id="aboutus">Jo Malone Australia Copyright</p>
       <img src="resources/logos/Trustmark_Desktop.png" alt="Product Name" />
+      <p id="aboutus">Jo Malone Australia Copyright</p>
+
       <p class="Us">
         Coded by: Bisma, Sadaf and Thai and is an opened sourced on
         <a href="https://github.com/bis-kan/PerfumeStore">Github</a>
