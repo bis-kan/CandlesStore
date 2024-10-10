@@ -17,6 +17,7 @@ h3 {
   font-size: 18px;
   font-weight: 300;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -53,38 +54,8 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  transition: all 950ms ease-in;
 }
-
-/*
-.nav-links ul {
-  list-style-type: none;
-  text-align: center;
-  margin-top: -50px;
-  overflow: hidden;
-}
-
-.nav-links li {
-  padding-left: 50px;
-  display: inline-block;
-  margin: 0 auto;
-}
-
-.nav-links a {
-  color: black;
-  text-decoration: none;
-  text-transform: capitalize;
-}
-  .carts {
-  float: right;
-  margin-top: -40px;
-  margin-right: 20px;
-}
-
-.carts a {
-  text-decoration: none;
-  color: black;
-}
-*/
 
 .hero {
   background-image: url("../resources/images/3.jpg");
@@ -125,21 +96,37 @@ nav a:hover {
   opacity: 1;
 }
 .cart-container {
+  opacity: 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
   width: 420px;
   height: 800px;
   background-color: rgb(249, 239, 226);
   border: 2px solid #d3bcbc;
   padding: 10px;
-  margin: 20px auto;
+  margin: 30px auto;
   overflow-y: auto;
-  top: 62px;
+  z-index: 1000;
+  /*display: none; */
 }
+
+.cart-container:hover {
+  opacity: 1;
+}
+
+/*
+.carts a:hover + .cart-container {
+  display: block;
+}
+*/
 
 .cart-container h3 {
   text-align: center;
   font-weight: 600;
   font-size: 18px;
   padding: 10px;
+  margin-top: 10px;
 }
 
 .cart-item {
@@ -206,6 +193,23 @@ nav a:hover {
   margin: 10px 0px;
 }
 
+.close-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.close-container a:hover {
+  text-decoration: underline;
+  transition: all 850ms ease-in-out;
+}
+
+.subtotal h5 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+}
+
 .close-container button {
   background-color: transparent;
   border: none;
@@ -214,44 +218,19 @@ nav a:hover {
   font-size: 14px;
   text-decoration: underline;
 }
-
-.carts:hover .modal {
-  display: flex;
-}
-
+/*
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  z-index: 1000; /* Make sure it appears on top of other elements */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background
+  z-index: 5000; /* Make sure it appears on top of other elements 
   justify-content: center;
   align-items: center;
-}
-
-/*Text to overlay
-.text-overlay {
-  text-align: left;
-  position: absolute;
-  top: 80%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  text-align: left;
-}
-/* Optional: To add a semi-transparent background 
-padding: 10px;
-border-radius: 5px;
-/* Optional: Round the corners of the text background 
-
-.text-overlay a {
-  text-decoration: none;
-  color: black;
-}
-*/
+} */
 
 .section {
   align-content: center;
@@ -264,17 +243,6 @@ border-radius: 5px;
   padding: 16px;
 }
 
-/*
-.product-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 32px;
-}
-*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -353,16 +321,47 @@ footer a {
     flex-direction: column; /* Stack sections vertically */
     align-items: center; /* Center align the sections */
   }
+
+  footer p {
+    margin: 10px;
+  }
+
+  footer img {
+    padding: 8px 0px;
+  }
+
+  .Us {
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   .navbar {
-      flex-direction: column;
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
   }
-  
+
   .nav-links {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 10px;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .carts {
+    margin-top: 16px;
+  }
+
+  .heading {
+    padding: 250px 0 0 50px;
+  }
+
+  .hero {
+    height: 500px;
+  }
+
+  .cart-container {
+    top: 150px;
+    width: 100%;
   }
 }
